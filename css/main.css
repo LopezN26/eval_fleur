@@ -23,11 +23,19 @@ body
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     flex-basis: 10%;
     color: rgba(81, 127, 65, 1);
     position: fixed;
     z-index: 2;
+}
+.backgroundWhite
+{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.backgroundBlue
+{
+    background-color: rgba(123, 212, 255, 0.3);
 }
 #accueil header>h1{
     font-family: WildFlowerBold;
@@ -54,9 +62,13 @@ body
 {
     margin: 0 0.4em 0 0.4em;
 }
+#accueil nav>i
+{
+    display: none;
+}
 #accueil main
 {
-    flex-basis: 90%;
+    flex-basis: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +83,6 @@ body
     justify-content: center;
     align-items: center;
     border: 4px white dotted;
-    margin-bottom: 10%;
     width : 60vw;
     height: 20vh;
 }
@@ -129,11 +140,11 @@ body
     width : 60vw;
     height: 20vh;
     font-family: 'Dancing Script', cursive;
-    font-size: 2.5em;
 }
 #slogan p
 {
     text-align: center;
+    font-size: 3rem;
 }
 
 
@@ -278,4 +289,73 @@ body
     font-family: 'Courgette', cursive;
     font-size: 3em;
     animation: bounce 5 1s 1s;
+}
+
+
+@media (max-width:890px)
+{
+    #accueil li
+    {
+        display: none;
+        flex-wrap: nowrap;
+    }
+    #accueil nav
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-right: 1em;
+    }
+    #accueil nav>i
+    {
+        display: inherit;
+        margin: 0;
+    }
+
+    #slogan p
+    {
+        font-size: 2rem;
+    }
+
+
+    #team img
+    {
+        width: 80vw;
+        height: 80vw;
+        border-radius: 80vw;
+    }
+    #team img+div
+    {
+        width: 70vw;
+        height: 70vw;
+        border-radius: 70vw;
+    }
+    #team h5
+    {
+        font-size: 3rem;
+    }
+    #team div>span
+    {
+        font-size: 2rem;
+    }
+
+
+    #contact div
+    {
+        font-size: 2rem;
+    }
+
+
+    #slider img
+    {
+        border-radius: 10vw;
+        width: 25vw;
+        height: 25vw;
+    }
+
+    #quams img
+    {
+        width: 75vw;
+        height: 75vw;
+    }
 }

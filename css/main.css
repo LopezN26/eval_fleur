@@ -330,6 +330,11 @@ body
         height: 70vw;
         border-radius: 70vw;
     }
+    #team img+div>i
+    {
+        color: white;
+        font-size:5em;
+    }
     #team h5
     {
         font-size: 3rem;
@@ -349,8 +354,8 @@ body
     #slider img
     {
         border-radius: 10vw;
-        width: 25vw;
-        height: 25vw;
+        width: 60vw;
+        height: 60vw;
     }
 
     #quams img

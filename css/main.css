@@ -288,7 +288,7 @@ body
     height: 10vh;
     font-family: 'Courgette', cursive;
     font-size: 3em;
-    animation: bounce 5 1s 1s;
+    animation: bounce 50 1s 1s;
 }
 
 
